@@ -1,0 +1,37 @@
+package com.dti.operator;
+
+public class Km3OPT {
+
+    public static void main(String[] args) {
+        //Increment/Decrement Opt.  =>  ++ เพิ่มที่ละ 1   -- ลดทีละ 1
+        int x = 10;
+        int y;
+
+        System.out.println(x);
+        x++;   //x = x + 1;
+        System.out.println(x);
+        ++x;
+        System.out.println(x);
+        x--;    //x = x - 1;
+        System.out.println(x);
+        --x;
+        System.out.println(x);
+        System.out.println("--------------------");
+        y = ++x;
+        System.out.println(x);
+        System.out.println(y);
+        System.out.println("--------------------");
+        y = x++;
+        System.out.println(x);
+        System.out.println(y);
+        System.out.println("--------------------");
+        //Assignment Opt. =>   =   +=   -=    *=   /=    %=
+        int num = 20;
+        num += 50;  //มันก็คือ num = num + 50;
+        num *= 2;    //มันก็คือ num = num * 2;
+        num = num + 5 / 9 * x - y;
+        num += 5 / 9 * x - y;
+        
+        System.out.println(num);
+    }
+}
